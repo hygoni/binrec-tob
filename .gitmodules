@@ -1,4 +1,4 @@
 [submodule "s2e-env"]
 	path = s2e-env
-	url = https://github.com/s2e/s2e-env.git
+	url = https://github.com/hygoni/s2e-env.git
 

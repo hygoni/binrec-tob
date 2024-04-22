@@ -56,7 +56,7 @@ _binrec-init:
     pipenv sync --dev
     git submodule update --recursive --init
     git lfs pull
-    cd ./s2e-env && pipenv run pip install .
+    cd ./s2e-env && git checkout 84d3662a25b0d956f809f15edc8dc064e55f3345 && pipenv run pip install .
     pipenv run s2e init {{justdir}}/s2e
     @just _freeze-s2e
     @just s2e-insert-binrec-plugins
